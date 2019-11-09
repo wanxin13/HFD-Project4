@@ -1,0 +1,77 @@
+\documentclass{report}
+\include{preamble}
+
+\title{\LectureTitle: Project 4}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Exercise 1}
+
+\subsection{A}
+
+The market index SPY had 11 jumps in 2007, 5 jumps in 2008, 7 jumps in 2009, 8 jumps in 2010, 4 jumps in 2011, 17 jumps in 2012, 9 jumps in 2013, 14 jumps in 2014, 8 jumps in 2015, 18 jumps in 2016 and 15 jumps in 2017. Average magnitude of the jumps in one year are: 0.0047 (2007), 0.0095 (2008), 0.0063 (2009), 0.0051 (2010), 0.0067 (2011), 0.0034 (2012), 0.0045 (2013), 0.0024 (2014), 0.0040 (2015), 0.0027 (2016), 0.0019 (2017).
+
+\subsection{B}
+
+This is HD returns at jump times.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1B_HD}
+\end{figure}
+
+From the plot, it seems quite plausible to assume a linear relationship between HD returns at jump times and market jump returns.
+
+This is VZ returns at jump times.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1B_VZ}
+\end{figure}
+
+From the plot, it seems quite plausible to assume a linear relationship between VZ returns at jump times and market jump returns.
+
+\subsection{C}
+
+The OLS jump beta for stock HD is 1.0511, which means when market jump return is 1 percent, the HD returns are expected to be 1.0511 percent.\
+The OLS jump beta for stock VZ is 0.7640, which means when market jump return is 1 percent, the HD returns are expected to be 0.7640 percent.
+\subsection{D}
+
+This is HD returns at jump times and the regression line.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1D_HD}
+\end{figure}
+
+This is VZ returns at jump times and the regression line.
+\begin{figure}[H]
+        \centering 
+         \includegraphics[width=0.7\textwidth]{figures//1D_VZ}
+\end{figure}
+
+\subsection{E}
+
+The $ \sqrt{\Delta_{n}\hat{V}_{\beta}} $ of Stock HD is 0.0415.\
+The $ \sqrt{\Delta_{n}\hat{V}_{\beta}} $ of Stock VZ is 0.0455.
+
+\subsection{F}
+
+The 95\% confidence interval for jump beta of HD is [0.9698 , 1.1325].\
+The 95\% confidence interval for jump beta of VZ is [0.6747 , 0.8533].
+
+\subsection{G}
+
+I can hedge my position by shortselling market index futures (SPY futures). If I am holding \$100 million worth of HD stock, I will want to short sell SPY futures at the range from \$96.98 millon to \$113.25 million. If I am holding \$100 million worth of HD stock, I will want to short sell SPY futures at the range from \$67.47 millon to \$85.33 million. 
+
+\subsection{H}
+
+The jump beta of HD for the period 1: 2007-2011 is 1.0310 and $ \hat{V}_{\beta 1} $ is 0.0035. The jump beta of HD fro the period 2: 2012-2017 is 1.0946 and $ \hat{V}_{\beta 2}$ is 0.00075.\
+The jump beta of VZ for the period 1: 2007-2011 is 0.7102 and $ \hat{V}_{\beta 1} $ is 0.0046. The jump beta of VZ fro the period 2: 2012-2017 is 0.8802 and $ \hat{V}_{\beta 2}$ is 0.00092.
+\subsection{I}
+
+The 95\% confidence interval for the difference of the jump betas of HD is [-0.0781, -0.0490]. It doesn't contain the number 0, which means the jump betas of HD for two period are not equal at the probability of 95\%. We can reject the assumption that we have same beta for these 11 years at significance level of 5\%.\
+The 95\% confidence interval for the difference of the jump betas of VZ is [-0,1865, -0.1535]. It doesn't contain the number 0, which means the jump betas of VZ for two period are not equal at the probability of 95\%. We can reject the assumption that we have same beta for these 11 years at significance level of 5\%.
+
+
+
+\end{document}

@@ -1,0 +1,11 @@
+auto/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+Project4.tex
+*.toc
+*.html
